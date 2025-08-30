@@ -4,79 +4,212 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>B$LL Buddy – Ads & Data Privacy Policy</title>
-  <meta name="description" content="B$LL Buddy Ads & Data Privacy Policy for Google AdMob and mediation partners." />
+  <meta name="description" content="How B$LL Buddy uses Google AdMob and mediation partners, your choices (consent/opt-out), and how to revoke or change ad preferences." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://mirog0103.github.io/bllbuddy-ads-privacy/" />
+  <meta name="theme-color" content="#0b5fff" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="B$LL Buddy – Ads & Data Privacy" />
+  <meta property="og:description" content="Learn how ads work in B$LL Buddy, what data is used, and how to change or revoke consent." />
+  <meta property="og:url" content="https://mirog0103.github.io/bllbuddy-ads-privacy/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="B$LL Buddy – Ads & Data Privacy" />
+  <meta name="twitter:description" content="How B$LL Buddy uses AdMob & mediation partners, and how you can manage your choices." />
+
   <style>
     :root { color-scheme: light dark; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif; line-height: 1.6; margin: 24px; color: #111; max-width: 880px; }
-    @media (prefers-color-scheme: dark) { body { color:#eaeaea; background:#111; } .card { background:#161616; border-color:#2a2a2a; } a { color:#6aa8ff; } }
-    h1,h2,h3 { line-height: 1.25; }
-    code,pre { background:#f6f7f8; padding:2px 4px; border-radius:4px; }
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0; padding: 24px;
+      color: #111; background: #fafafa;
+      display: flex; align-items: flex-start; justify-content: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color:#eaeaea; background:#111; }
+      .card { background:#161616; border-color:#2a2a2a; }
+      a { color:#6aa8ff; }
+      .btn { background: #0b5fff; color: #fff; }
+      .btn.secondary { background:#2a2a2a; color:#eaeaea; }
+    }
+    .card {
+      background:#fff; border:1px solid #eee; border-radius:14px;
+      padding:24px; max-width: 900px; width:100%;
+      box-shadow: 0 1px 12px rgba(0,0,0,.04);
+    }
+    h1,h2,h3 { line-height: 1.25; margin-top: .2rem; }
+    .muted { color:#666; font-size:.95rem; }
     a { color:#0b5fff; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .card { background:#fff; border:1px solid #eee; border-radius:12px; padding:20px; }
-    .muted { color:#666; font-size:.95rem; }
+    .callout {
+      border-left: 4px solid #0b5fff; padding: 12px 14px; border-radius: 8px;
+      background: rgba(11,95,255,.06); margin: 12px 0 18px 0;
+    }
+    .grid { display: grid; gap: 6px 18px; grid-template-columns: 1fr; }
+    @media (min-width: 640px) { .grid.cols-2 { grid-template-columns: 1fr 1fr; } }
+    .list-tight li { margin: 6px 0; }
+    .btn {
+      display:inline-block; border-radius:10px; padding:12px 16px; font-weight:600;
+      background:#0b5fff; color:#fff; border:none; cursor:pointer;
+      text-decoration:none; transition: transform .05s ease;
+    }
+    .btn:active { transform: scale(.98); }
+    .btn.secondary { background:#f1f2f3; color:#111; }
+    code,pre { background:#f6f7f8; padding:2px 4px; border-radius:4px; }
+    .hr { height:1px; background: #e9e9ea; margin: 18px 0; }
+    .small { font-size: .95rem; }
   </style>
+
+  <!-- Minimal structured data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"B$LL Buddy – Ads & Data Privacy",
+    "url":"https://mirog0103.github.io/bllbuddy-ads-privacy/",
+    "about":{"@type":"MobileApplication","name":"B$LL Buddy","operatingSystem":"iOS"},
+    "publisher":{"@type":"Organization","name":"B$LL Buddy","url":"https://mirog0103.github.io/"},
+    "inLanguage":"en"
+  }
+  </script>
 </head>
 <body>
-  <article class="card">
-    <h1>B$LL Buddy – Ads &amp; Data Privacy Policy</h1>
-    <p class="muted">Effective: 30 Aug 2025 • Contact: <a href="mailto:mirog0103@gmail.com">mirog0103@gmail.com</a></p>
+  <article class="card" role="main">
+    <header>
+      <h1>B$LL Buddy – Ads &amp; Data Privacy</h1>
+      <p class="muted">Effective: 30 Aug 2025 • Contact: <a href="mailto:mirog0103@gmail.com">mirog0103@gmail.com</a></p>
+    </header>
 
     <p>
-      This page explains how B$LL Buddy (“we”, “us”) uses advertising technologies (Google AdMob and selected
-      mediation partners) in the iOS app. It supplements our main Privacy Policy and focuses on ad-related data.
+      This page explains how B$LL Buddy (“we”, “us”) uses advertising technologies (Google AdMob and mediation partners) in our iOS app.
+      It supplements our main Privacy Policy and focuses on ad-related data, consent, and your choices.
     </p>
 
-    <h2>What we collect for ads</h2>
-    <ul>
-      <li>Ad performance and interaction (e.g., impressions, taps, frequency capping).</li>
-      <li>Approximate location (city/region) inferred by the ad provider (we do <strong>not</strong> collect GPS).</li>
-      <li>Device and app info (app version, OS version, model, language, IP for fraud-prevention).</li>
-      <li>Identifiers used for ads (e.g., IDFA if you consent / ATT allows it; otherwise limited or none).</li>
-    </ul>
+    <div class="callout">
+      <strong>We do <u>not</u> access your Contacts, Camera/Photos, or precise (GPS) location.</strong>
+      Ad platforms may use approximate location (e.g., city/region) from network signals for things like geo-targeting and fraud prevention.
+    </div>
 
-    <p><strong>We do not access your Contacts, Camera/Photos, or precise (GPS) location.</strong></p>
+    <h2>What data may be used for ads</h2>
+    <ul class="list-tight">
+      <li>Ad performance &amp; interactions (impressions, taps, frequency capping, session info).</li>
+      <li>Approximate location inferred by providers (no GPS collected by us).</li>
+      <li>Device &amp; app info (model, OS version, language, app version, IP for security/fraud control).</li>
+      <li>Identifiers for ads (e.g., IDFA if you consent and allow tracking under iOS ATT; otherwise limited/none).</li>
+    </ul>
 
     <h2>Who processes ad data</h2>
-    <p>We serve ads via Google AdMob and may use mediation to request ads from multiple ad networks. Each partner acts under its own privacy policy:</p>
-    <ul>
-      <li>Google AdMob / Google Marketing Platform – <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
-      <li>AppLovin (MAX) – <a href="https://www.applovin.com/privacy/">applovin.com/privacy/</a></li>
-      <li>Unity – <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a></li>
-      <li>ironSource (LevelPlay) – <a href="https://www.is.com/privacy-policy/">is.com/privacy-policy/</a></li>
-    </ul>
+    <p>We serve ads via Google AdMob and may request ads through mediation. Partners operate under their own privacy terms:</p>
+    <div class="grid cols-2">
+      <ul class="list-tight">
+        <li>Google AdMob – <a href="https://policies.google.com/privacy" rel="nofollow">policies.google.com/privacy</a></li>
+        <li>AppLovin (MAX) – <a href="https://www.applovin.com/privacy/" rel="nofollow">applovin.com/privacy/</a></li>
+        <li>Unity Ads – <a href="https://unity.com/legal/privacy-policy" rel="nofollow">unity.com/legal/privacy-policy</a></li>
+        <li>ironSource (LevelPlay) – <a href="https://www.is.com/privacy-policy/" rel="nofollow">is.com/privacy-policy/</a></li>
+      </ul>
+      <ul class="list-tight">
+        <li>Meta (Audience Network) – <a href="https://www.facebook.com/privacy/policy" rel="nofollow">facebook.com/privacy/policy</a></li>
+        <li>Vungle – <a href="https://vungle.com/privacy/" rel="nofollow">vungle.com/privacy/</a></li>
+        <li>InMobi – <a href="https://www.inmobi.com/privacy-policy/" rel="nofollow">inmobi.com/privacy-policy/</a></li>
+        <li>AdColony – <a href="https://www.adcolony.com/privacy-policy/" rel="nofollow">adcolony.com/privacy-policy/</a></li>
+      </ul>
+    </div>
+    <p class="small muted">Note: The active set of mediation partners may change over time (e.g., by region or auction). We will update this list periodically.</p>
 
-    <h2>Legal basis &amp; region-specific info</h2>
+    <h2>Legal basis &amp; regional info</h2>
     <p>
-      In the EEA/UK, we rely on your consent (GDPR/UK GDPR) obtained through Google’s User Messaging Platform (UMP).
-      If you decline consent, we show contextual or limited ads when available. In California, we honor “Do Not Sell
-      or Share” choices under CPRA via AdMob’s privacy controls.
+      <strong>EEA/UK (GDPR/UK GDPR):</strong> We rely on your consent to process personal data for personalized ads via Google’s User Messaging Platform (UMP).
+      If you decline consent, we show non-personalized or contextual ads when available.
+      <br />
+      <strong>US (CPRA):</strong> We honor “Do Not Sell or Share” choices using AdMob/UMP privacy controls. Your device’s iOS settings can also limit tracking.
     </p>
 
-    <h2>Your choices</h2>
-    <ul>
-      <li><strong>Consent (EEA/UK):</strong> You’ll see a consent form on first launch and when required by Google.</li>
-      <li><strong>Change your choice:</strong> In the app, go to <em>Settings → Privacy → Manage Ads Consent</em> (when available). You can also adjust iOS:
-        <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
-      <li><strong>Limit Ad Tracking:</strong> iOS → Settings → Privacy &amp; Security → Apple Advertising / Tracking.</li>
+    <h2>Change / revoke your choice</h2>
+    <p>
+      You can change or revoke your ads consent at any time:
+    </p>
+    <ol>
+      <li><strong>Recommended:</strong> Tap the button below to open B$LL Buddy and show the consent options form.</li>
+      <li>If the app doesn’t open, open B$LL Buddy → <em>Settings → Privacy → Manage Ads Consent</em>.</li>
+      <li>Additionally, on iOS you can manage tracking in <em>Settings → Privacy &amp; Security → Tracking</em>.</li>
+    </ol>
+
+    <p>
+      <a id="open-app" class="btn" href="billbuddy://privacy">Change / Revoke Consent in App</a>
+      <a id="fallback" class="btn secondary" style="margin-left:8px; display:none;" href="#">Didn’t open? See instructions</a>
+    </p>
+    <p id="fallback-text" class="small muted" style="display:none;">
+      If the app didn’t open automatically, open B$LL Buddy on your device, go to <em>Settings → Privacy → Manage Ads Consent</em> and follow the prompts.
+    </p>
+
+    <div class="hr"></div>
+
+    <h2>Your other choices</h2>
+    <ul class="list-tight">
+      <li><strong>Limit Ad Tracking:</strong> iOS → Settings → Privacy &amp; Security → Tracking.</li>
+      <li><strong>Reset Advertising ID:</strong> iOS → Settings → Privacy &amp; Security → Tracking (toggle permissions as needed).</li>
+      <li><strong>Apple Advertising:</strong> iOS → Settings → Privacy &amp; Security → Apple Advertising.</li>
     </ul>
 
     <h2>Data retention</h2>
-    <p>Ad vendors retain data per their policies for reporting, fraud prevention, and compliance. We do not store raw ad identifiers in our databases.</p>
+    <p>
+      Ad vendors retain data under their policies for reporting, fraud prevention, and compliance.
+      B$LL Buddy does not store raw advertising identifiers in its own databases.
+    </p>
 
     <h2>Children</h2>
-    <p>The app is not directed to children under 13 (or the local age of digital consent). We do not knowingly collect personal data from children.</p>
+    <p>
+      B$LL Buddy is not directed to children under 13 (or the local age of digital consent).
+      We do not knowingly collect personal data from children.
+    </p>
+
+    <h2>Hosting & disclosures</h2>
+    <p class="small">
+      This page is hosted on GitHub Pages, which may log standard access data (e.g., IP address) when you view this page.
+      See GitHub’s privacy statements for details.
+    </p>
 
     <h2>Updates</h2>
-    <p>We may update this page as partners or settings change. The effective date will be updated accordingly.</p>
+    <p>
+      We may update this page as partners, settings, or laws change. We will adjust the effective date above and publish the new version here.
+    </p>
 
     <h2>Contact</h2>
     <p>Email: <a href="mailto:mirog0103@gmail.com">mirog0103@gmail.com</a></p>
 
-    <hr />
-    <p class="muted">
-      This Ads &amp; Data policy supplements the main B$LL Buddy Privacy Policy and applies to the iOS app’s advertising features.
+    <p class="muted small">
+      This Ads &amp; Data page supplements the main B$LL Buddy Privacy Policy and applies to advertising features in the iOS app.
     </p>
   </article>
+
+  <script>
+    // Try to open the app via deep link, then show fallback if nothing happens.
+    (function () {
+      var btn = document.getElementById('open-app');
+      var fb = document.getElementById('fallback');
+      var fbt = document.getElementById('fallback-text');
+
+      function showFallback() {
+        fb.style.display = 'inline-block';
+        fbt.style.display = 'block';
+      }
+
+      btn.addEventListener('click', function (e) {
+        // Let the link fire; also start a fallback timer.
+        // If the app isn't installed / deep link not handled, show instructions.
+        setTimeout(showFallback, 1200);
+      }, false);
+
+      fb.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+      }, false);
+    })();
+  </script>
 </body>
 </html>
